@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+<body background="images/bg.png">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#loadmap">LoadMap</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Tutan's Portfolio</h1>
+    </header>
+
+    <section id="about">
+        <h2 class="under-line">About Me</h2>
+        <div class="about-container">
+            <img src="images/myIcon.png">
+            <div class="description">
+                <h2>會田　弘大 / Koudai Aida</h2>
+                <h3>　2005年2月14日生まれ。趣味はプログラミングやドラム、ベース。
+                    ボードゲームや謎解き等アナログゲームが好きです。
+                    大学では情報工学を学んでおり、特にバックエンドに興味があります。
+                </h3>
+                <li><a href="https://github.com/tutagebo">GitHub</a></li>
+                <li><a href="https://qiita.com/nattoufu">Qiita</a></li>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="under-line">Projects</h2>
+        <div class="project-container">
+            <button type="button" onclick="onClickPopUp('danmaku')" class="project">
+                <h3>先生を救え！</h3>
+                <img src="images/projects/danmaku.png">
+                <div><p>高校の文化祭で作成した弾幕ゲームです。<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
+            </button>
+            <button type="button" onclick="onClickPopUp('friendGame')" class="project">
+                <h3>フレンドゲーム</h3>
+                <img src="images/projects/friendGame.png">
+                <div><p>友達の誕生日にて制作したスイカゲームを<br>オマージュしたゲームです。</p><p style="color: #74acff;">タップでさらに表示</p></div>
+            </button>
+            <button type="button" onclick="onClickPopUp('mathGame')" class="project">
+                <h3>MathOnline</h3>
+                <img src="images/projects/math-0.png">
+                <div><p>素因数分解など数学をテーマにしたゲームです。<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
+            </button>
+            <div id="popup-bg" onclick="popupClose()"></div>
+                <div class="popup-window" id="danmaku">
+                    <div class="popup-image-container">
+                        <img src="images/projects/friendGame.png">
+                    </div>
+                    <div class="popup-description">
+                        <h2>洗脳された先生達を救え！！</h2>
+                        <h4>　高校の先生方から許可を貰ってテクスチャを部員達にお願いし作成しました。<br>初めてのゲーム制作で弾幕を考えて実装するのに苦労しました。</h4>
+                        <h3>【使用技術】</h3>
+                        <h4>　Unity, C#</h4>
+                    </div>
+                </div>
+                <div class="popup-window" id="friendGame">
+                    <div class="popup-image-container">
+                        <img src="images/projects/friendGame.png">
+                    </div>
+                    <div class="popup-description">
+                        <h2>フレンドゲーム</h2>
+                        <h4>　当たり判定を丸ではなくしっかりと作りました。<br>衝突時の合体処理が一番苦労しました。</h4>
+                        <h3>【使用技術】</h3>
+                        <h4>　Unity, C#</h4>
+                    </div>
+                </div>
+                <div class="popup-window" id="mathGame">
+                    <div class="popup-image-container">
+                        <img src="images/projects/math-2.png">
+                        <img src="images/projects/math-3.png">
+                        <img src="images/projects/math-1.png">
+                    </div>
+                    <div class="popup-description">
+                        <h2>MathOnline</h2>
+                        <h4>　素因数分解をするゲームでランキング機能があります。初めてインターネットでの通信を扱いました。現在、対戦機能を作っています。</h4>
+                        <h3>【使用技術】</h3>
+                        <h4>　クライアント側: Unity, C#<br>　サーバー側: Ubuntu, Node.js, MySQL, Docker, k8s, UDP</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="under-line">Skills</h2>
+        <div class="skill">
+            <img src="images/icons/js.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">JavaScript</p>
+            <div class="skill-meter-bg">
+                <h2>85%</h2>
+                <div class="skill-meter" style="width: 85%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/html.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">HTML</p>
+            <div class="skill-meter-bg">
+                <h2>35%</h2>
+                <div class="skill-meter" style="width: 35%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/css.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">CSS</p>
+            <div class="skill-meter-bg">
+                <h2>28%</h2>
+                <div class="skill-meter" style="width: 28%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/unity.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">Unity</p>
+            <div class="skill-meter-bg">
+                <h2>50%</h2>
+                <div class="skill-meter" style="width: 50%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/cs.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">C#</p>
+            <div class="skill-meter-bg">
+                <h2>55%</h2>
+                <div class="skill-meter" style="width: 55%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/cpp.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">C,C++</p>
+            <div class="skill-meter-bg">
+                <h2>45%</h2>
+                <div class="skill-meter" style="width: 45%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/py.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">Python</p>
+            <div class="skill-meter-bg">
+                <h2>19%</h2>
+                <div class="skill-meter" style="width: 19%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/nodejs.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">Node.js</p>
+            <div class="skill-meter-bg">
+                <h2>75%</h2>
+                <div class="skill-meter" style="width: 75%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/mysql.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">MySQL</p>
+            <div class="skill-meter-bg">
+                <h2>31%</h2>
+                <div class="skill-meter" style="width: 31%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/docker.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">C#</p>
+            <div class="skill-meter-bg">
+                <h2>13%</h2>
+                <div class="skill-meter" style="width: 13%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/k8s.png" style="margin-right: auto;">
+            <p style="margin-right: auto;">C#</p>
+            <div class="skill-meter-bg">
+                <h2>8%</h2>
+                <div class="skill-meter" style="width: 8%"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <img src="images/icons/git.png" style="margin: auto;">
+            <img src="images/icons/github.png" style="margin: auto;">
+            <img src="images/icons/ubuntu.png" style="margin: auto;">
+            <img src="images/icons/kali.png" style="margin: auto;">
+            <img src="images/icons/vim.png" style="margin: auto;">
+            <img src="images/icons/vs.png" style="margin: auto;">
+        </div>
+    </section>
+    <section id="loadmap">
+        <h2 class="under-line">Load Map</h2>
+        <div class="loadmap">
+            <div class="shadow">
+                <div class="octagon">
+                    <h3>
+                        2005年2月<br>爆誕
+                    </h3>
+                </div>
+                <div class="load-line"></div>
+                <div class="octagon">
+                    <h3>
+                        2015年<br>マイクラとの出会い
+                    </h3>
+                </div>
+                <div class="load-line"></div>
+                <div class="octagon">
+                    <h3>
+                        2018年<br>addon製作で<br>プログラミング沼へ
+                    </h3>
+                </div>
+                <div class="load-line"></div>
+                <div class="octagon">
+                    <h3>
+                        2019年<br>まともなパソコンが<br>我が家にやって来た
+                    </h3>
+                </div>
+                <div class="load-line"></div>
+                <div class="octagon">
+                    <h3>
+                        2022年<br>文化祭で<br>ゲーム制作をする
+                    </h3>
+                </div>
+                <div class="load-line"></div>
+                <div class="octagon">
+                    <h3>
+                        2023年<br>大学に入学<br>情報工学を学ぶ
+                    </h3>
+                </div>
+            </div>
+            <div class="pop-area">
+                <div class="pop-wraper">
+                    <div class="image-pop">
+                        <img src="images/loadmap/bakutan.png">
+                    </div>
+                    <div class="pop-description">
+                        <h1>茨城に降臨</h1>
+                        <h3>ビフォーアフターが好きで<br>将来の夢は建築士だった</h3>
+                    </div>
+                </div>
+                <div class="pop-wraper">
+                    <div class="image-pop">
+                        <img src="images/loadmap/minecraft.png">
+                    </div>
+                    <div class="pop-description">
+                        <h1>小4でマイクラ沼へ</h1>
+                        <h3>この時はこれからの人生がマイクラのおかげでガラッと変わったなんて知る由もなかった</h3>
+                    </div>
+                </div>
+                <div class="pop-wraper">
+                    <div class="image-pop">
+                        <img src="images/loadmap/programming.png">
+                    </div>
+                    <div class="pop-description">
+                        <h1>プログラミングを知る</h1>
+                        <h3>Scratchはやっていたが、文字で書くプログラミングが試行錯誤して動いた快感を知った</h3>
+                    </div>
+                </div>
+                <div class="pop-wraper">
+                    <div class="image-pop">
+                        <img src="images/loadmap/yorokobi.png">
+                    </div>
+                    <div class="pop-description">
+                        <h1>Windows10がやって来た</h1>
+                        <h3>それまではiPadとスマホでコーディングしてたらしい<br>今じゃ考えられない</h3>
+                    </div>
+                </div>
+                <div class="pop-wraper">
+                    <div class="image-pop">
+                        <img src="images/loadmap/bunnkasai.png">
+                    </div>
+                    <div class="pop-description">
+                        <h1>所属部活で色々やる</h1>
+                        <h3>初めてのゲームエンジンでUnityを使用<br>テクスチャなどは同じ部活の人達にお願いした</h3>
+                    </div>
+                </div>
+                <div class="pop-wraper">
+                    <div class="image-pop">
+                        <img src="images/loadmap/server.png">
+                    </div>
+                    <div class="pop-description">
+                        <h1>地方の大学で一人暮らし</h1>
+                        <h3>バイトして念願の高性能PCを購入し、サーバー試したりペネトレーションテストしたり</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="under-line">Contact</h2>
+        <p>Email: aida.koudai@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Koudai Aida. All rights reserved. Icons by <a href="https://icons8.jp/">Icons8</a></p>
+    </footer>
+    <script src="animation.js"></script>
+</body>
+</html>
