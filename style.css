@@ -316,7 +316,7 @@ div.loadmap {
 }
 
 .image-pop>img{
-    height: 130px;
+    height: calc(100% - 20px);
     border-radius: 50%;
     transform: rotate(-45deg);
     overflow: hidden;
@@ -358,12 +358,20 @@ div.loadmap {
     .skill>p {
         display: none;
     }
+    .octagon {
+        width: 160px;
+        font-size: 0.9rem;
+    }
     .pop-area {
-        width: 200px;
+        width: 150px;
     }
     .pop-wraper {
-        height: 180px;
+        height: 140px;
         display: block;
+    }
+    .image-pop {
+        width: 130px;
+        height: 130px;
     }
     .pop-description>h1 {
         display: none;
