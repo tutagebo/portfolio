@@ -15,15 +15,17 @@ function onClickPopUp(index){
     popupTargets.classList.add("popup-visible");
     const bg = document.getElementById("popup-bg");
     bg.style.display = "block";
+    document.body.style.overflow = "hidden";
     return;
 }
 
-function popupClose(){
+function onPopupClose(){
     const popups = document.getElementsByClassName("popup-window");
     for(const popup of popups){
         popup.classList.remove("popup-visible");
     }
     const bg = document.getElementById("popup-bg");
     bg.style.display = "none";
+    document.body.style.overflow = "";
     return;
 }
