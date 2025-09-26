@@ -150,7 +150,8 @@ section>h2 {
 .popup-window {
     max-width: 560px;
     width: auto;
-    height: 560;
+    min-height: 560px;
+    height: auto;
     padding: 10px;
     display: none;
     z-index: 3;
