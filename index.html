@@ -31,7 +31,7 @@
                 <h2>會田　弘大 / Koudai Aida</h2>
                 <h3>　2005年2月14日生まれ。趣味はプログラミングやドラム、ベース。
                     ボードゲームや謎解き等アナログゲームが好きです。
-                    大学では情報工学を学んでおり、特にバックエンドに興味があります。
+                    技術で生活をより楽しくより快適にしたいと考えています。
                 </h3>
                 <a href="https://github.com/tutagebo"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
                 <a href="https://qiita.com/nattoufu"><img src="images/icons/qiita.png" style="width: 48px; height: 48px; transform: scale(0.8);"></a>
@@ -42,6 +42,21 @@
     <section id="projects">
         <h2 class="under-line">Projects</h2>
         <div class="project-container">
+            <button type="button" onclick="onClickPopUp('triverse')" class="project">
+                <h3>TriVerse</h3>
+                <img src="images/projects/triverse.png">
+                <div><p>レーンを切り替えて操作する新感覚の音ゲーです。<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
+            </button>
+            <button type="button" onclick="onClickPopUp('mathGame')" class="project">
+                <h3>MathOnline</h3>
+                <img src="images/projects/math-0.png">
+                <div><p>素因数分解など数学をテーマにしたゲームです。<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
+            </button>
+            <button type="button" onclick="onClickPopUp('chs')" class="project">
+                <h3>ChainScript</h3>
+                <img src="images/projects/chs.png">
+                <div><p>自作の言語です。<br>言語を作りたかった...<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
+            </button>
             <button type="button" onclick="onClickPopUp('danmaku')" class="project">
                 <h3>先生を救え！</h3>
                 <img src="images/projects/danmaku.png">
@@ -52,46 +67,26 @@
                 <img src="images/projects/friendGame.png">
                 <div><p>友達の誕生日にて制作したスイカゲームを<br>オマージュしたゲームです。</p><p style="color: #74acff;">タップでさらに表示</p></div>
             </button>
-            <button type="button" onclick="onClickPopUp('mathGame')" class="project">
-                <h3>MathOnline</h3>
-                <img src="images/projects/math-0.png">
-                <div><p>素因数分解など数学をテーマにしたゲームです。<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
+            <button type="button"  class="project">
+                <h3>and more...</h3>
+                <img src="images/comming_soon.png">
+                <div><p>新感覚でワクワクするようなゲームを制作中です。</p></div>
             </button>
-            <button type="button" onclick="onClickPopUp('chs')" class="project">
-                <h3>ChainScript</h3>
-                <img src="images/projects/chs.png">
-                <div><p>自作の言語です。<br>特に理由はありません。<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
-            </button>
-            <button type="button" onclick="onClickPopUp('triverse')" class="project">
-                <h3>TriVerse</h3>
-                <img src="images/projects/triverse.png">
-                <div><p>レーンを切り替えて操作する新感覚の音ゲーです。<br></p><p style="color: #74acff;">タップでさらに表示</p></div>
-            </button>
-            <div id="popup-bg" onclick="onPopupClose()"></div>
-                <div class="popup-window" id="danmaku">
+            <div id="popup-bg" onclick="onPopupClose()">
+                <div class="popup-window" id="triverse">
                     <div class="popup-image-container">
-                        <img src="images/projects/danmaku.png">
+                        <img src="images/projects/triverse.png">
                     </div>
                     <div class="popup-description">
-                        <h2>洗脳された先生達を救え！！</h2>
-                        <h4>　高校の先生方から許可を貰ってテクスチャを部員達にお願いし作成しました。<br>初めてのゲーム制作で弾幕を考えて実装するのに苦労しました。</h4>
+                        <h2>TriVerse</h2>
+                        <h4>　音ゲーを1ヶ月で作り上げました。判定などの内部処理に力を入れて作成しました。</h4>
                         <h3>【使用技術】</h3>
-                        <h4>　Unity, C#</h4>
+                        <h4>　クライアント側: Unity, C#</h4>
+                        <h4>　サーバー側: Node.js, MySQL, Docker</h4>
                     </div>
-                    <a href="https://github.com/tutagebo/TeacherDanmaku"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
-                </div>
-                <div class="popup-window" id="friendGame">
-                    <div class="popup-image-container">
-                        <img src="images/projects/friendGame.png">
-                    </div>
-                    <div class="popup-description">
-                        <h2>フレンドゲーム</h2>
-                        <h4>　当たり判定を丸ではなくしっかりと作りました。<br>衝突時の合体処理が一番苦労しました。</h4>
-                        <h3>【使用技術】</h3>
-                        <h4>　Unity, C#</h4>
-                        <br>
-                        <h4>友達の名前や顔が使われている都合上、<br>ソースコードの公開はしていません。</h4>
-                    </div>
+                    <a href="https://github.com/tutagebo/TriVerseClient"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
+                    <a href="https://github.com/tutagebo/TriVerseBackend"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
+                    <a href="https://unityroom.com/games/triverse"><img src="images/icons/triverse_logo.png" style="width: 50px; height: 50px;"></a>
                 </div>
                 <div class="popup-window" id="mathGame">
                     <div class="popup-image-container">
@@ -119,23 +114,48 @@
                     </div>
                     <a href="https://github.com/tutagebo/ChainScript"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
                 </div>
-                <div class="popup-window" id="triverse">
+                <div class="popup-window" id="danmaku">
                     <div class="popup-image-container">
-                        <img src="images/projects/triverse.png">
+                        <img src="images/projects/danmaku.png">
                     </div>
                     <div class="popup-description">
-                        <h2>TriVerse</h2>
-                        <h4>　音ゲーを1ヶ月で作り上げました。判定などの内部処理に力を入れて作成しました。</h4>
+                        <h2>洗脳された先生達を救え！！</h2>
+                        <h4>　高校の先生方から許可を貰ってテクスチャを部員達にお願いし作成しました。<br>初めてのゲーム制作で弾幕を考えて実装するのに苦労しました。</h4>
                         <h3>【使用技術】</h3>
-                        <h4>　クライアント側: Unity, C#</h4>
-                        <h4>　サーバー側: Node.js, MySQL, Docker</h4>
+                        <h4>　Unity, C#</h4>
                     </div>
-                    <a href="https://github.com/tutagebo/TriVerseClient"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
-                    <a href="https://github.com/tutagebo/TriVerseBackend"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
-                    <a href="https://unityroom.com/games/triverse"><img src="images/icons/triverse_logo.png" style="width: 50px; height: 50px;"></a>
+                    <a href="https://github.com/tutagebo/TeacherDanmaku"><img src="images/icons/github.png" style="width: 50px; height: 50px;"></a>
+                </div>
+                <div class="popup-window" id="friendGame">
+                    <div class="popup-image-container">
+                        <img src="images/projects/friendGame.png">
+                    </div>
+                    <div class="popup-description">
+                        <h2>フレンドゲーム</h2>
+                        <h4>　当たり判定を丸ではなくしっかりと作りました。<br>衝突時の合体処理が一番苦労しました。</h4>
+                        <h3>【使用技術】</h3>
+                        <h4>　Unity, C#</h4>
+                        <br>
+                        <h4>友達の名前や顔が使われている都合上、<br>ソースコードの公開はしていません。</h4>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="interns">
+        <h2 class="under-line">Interns</h2>
+        <div class="intern-container">
+            <div class="intern-card">
+                <div class="company">
+                    <h3>株式会社デジタルガレージ</h3>
+                </div>
+                <h3 class="under-line">2025年9月 - 10月</h3>
+                <h4><br>
+                    　要件定義から設計、実装、テストまで一貫した開発を経験しました。フロントではReactを使い、バックエンドではNode.jsを使い開発をしました。
+                    インフラ構築ではAWSのAppRunnerとCloudFrontを使用して構築しました。
+                    このインターンを通じて、コードレビュー文化や全体の開発フロー、より良いプロダクトを届けるために必要なことを学びました。
+                </h4>
+            </div>
     </section>
 
     <section id="skills">
@@ -208,16 +228,16 @@
             <img src="images/icons/mysql.png" style="margin-right: auto;">
             <p style="margin-right: auto;">MySQL</p>
             <div class="skill-meter-bg">
-                <h2>40%</h2>
-                <div class="skill-meter" style="width: 40%"></div>
+                <h2>45%</h2>
+                <div class="skill-meter" style="width: 45%"></div>
             </div>
         </div>
         <div class="skill">
             <img src="images/icons/docker.png" style="margin-right: auto;">
             <p style="margin-right: auto;">Docker</p>
             <div class="skill-meter-bg">
-                <h2>31%</h2>
-                <div class="skill-meter" style="width: 31%"></div>
+                <h2>55%</h2>
+                <div class="skill-meter" style="width: 55%"></div>
             </div>
         </div>
         <div class="skill">

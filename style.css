@@ -51,7 +51,7 @@ nav ul li a {
 
 
 
-h2.under-line::after {
+.under-line::after {
     content: "";
     display: block;
     max-width: 1000px;
@@ -149,8 +149,8 @@ section>h2 {
 
 .popup-window {
     max-width: 560px;
-    width: auto;
     min-height: 560px;
+    width: auto;
     height: auto;
     padding: 10px;
     display: none;
@@ -199,6 +199,23 @@ section>h2 {
 
 .popup-visible {
     display: block;
+}
+
+.intern-card {
+    width: 800px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: block;
+    margin: 10px auto;
+}
+
+.intern-card>.company {
+    background-color: #74acff;
+    color: white;
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 10px;
 }
 
 .skill {
